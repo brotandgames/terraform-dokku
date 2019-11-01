@@ -1,6 +1,6 @@
 # terraform-dokku
 
-Terraform Module to deploy a Dokku on a node with docker installed.
+Terraform Module to deploy Dokku on a node with SSH access using Debian Package Installation
 
 ## Usage
 
@@ -15,7 +15,7 @@ tbd.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| dokku\_hostname | Dokku hostname | string | `""` | no |
+| dokku\_hostname | Dokku hostname | string | `"dokku.yourhost.com"` | no |
 | dokku\_version | Dokku version | string | `"0.19.6"` | no |
 | ssh\_host | SSH host | string | `"192.168.0.100"` | no |
 | ssh\_private\_key\_path | SSH private key path | string | `"~/.ssh/id_rsa"` | no |

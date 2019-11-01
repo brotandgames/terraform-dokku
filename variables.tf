@@ -20,5 +20,5 @@ variable "dokku_version" {
 
 variable "dokku_hostname" {
   description = "Dokku hostname"
-  default     = ""
+  default     = "dokku.yourhost.com"
 }
