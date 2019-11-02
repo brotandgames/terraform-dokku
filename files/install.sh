@@ -20,6 +20,9 @@ DOKKU_HOSTNAME="$2"
 log "DOKKU_VERSION=$DOKKU_VERSION"
 log "DOKKU_HOSTNAME=$DOKKU_HOSTNAME"
 
+log "Waiting 20 sec. for package managers ..."
+sleep 20
+
 log "Install prerequisites ..."
 sudo apt-get update -qq >/dev/null
 sudo apt-get install -qq -y apt-transport-https
